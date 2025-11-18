@@ -457,7 +457,7 @@
                         </div>
                         <div class="contact-item-value">
                             <a href="mailto:queenofpeace.org@gmail.com">queenofpeace.org@gmail.com</a><br>
-                            <a href="mailto:queenofpeace21@yahoo.com">queenofpeace21@yahoo.com</a>
+                            <a href="mailto:qprehab@gmail.com ">qprehab@gmail.com </a>
                         </div>
                     </div>
 
@@ -467,8 +467,8 @@
                             Phone
                         </div>
                         <div class="contact-item-value">
-                            <a href="tel:+263714375268">+263 71 437 5268</a><br>
-                            <a href="tel:+263719932695">+263 71 993 2695</a>
+                            <a href="tel:+263777942996">+263 77 7942 996</a><br>
+                            <a href="tel:+263719932695">+263 719 932 695</a>
                         </div>
                     </div>
 

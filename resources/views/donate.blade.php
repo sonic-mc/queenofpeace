@@ -899,8 +899,9 @@
                             Direct bank deposit for larger donations or organizational giving.
                         </div>
                         <div class="other-way-contact">
-                            <strong>Bank:</strong> [Bank Name]<br>
-                            <strong>Account:</strong> [Account Number]
+                            <strong>Bank:</strong> Banc ABC<br>
+                            <strong>Account USD:</strong> 12655006633189
+                            <strong>Account ZIG:</strong> 510-12655005402020
                         </div>
                     </div>
 
@@ -913,8 +914,8 @@
                             Send donations via EcoCash or OneMoney for quick support.
                         </div>
                         <div class="other-way-contact">
-                            <strong>EcoCash:</strong> +263 71 437 5268<br>
-                            <strong>OneMoney:</strong> +263 71 993 2695
+                            <strong>EcoCash:</strong> +263 772 600 778<br>
+                            {{-- <strong>OneMoney:</strong> +263 71 993 2695 --}}
                         </div>
                     </div>
 
@@ -927,8 +928,8 @@
                             Donate goods, supplies, or services to support our programs.
                         </div>
                         <div class="other-way-contact">
-                            <strong>Contact:</strong> queenofpeace.org@gmail.com<br>
-                            <strong>Phone:</strong> +263 71 437 5268
+                            <strong>Contact:</strong> queenofpeace.org@gmail.com | qprehab@gmail.com <br>
+                            <strong>Phone:</strong> +263 77 7 942 996 | +263 772 600 778 | +263 719 932 695
                         </div>
                     </div>
                 </div>

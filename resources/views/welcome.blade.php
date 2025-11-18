@@ -650,7 +650,7 @@
                     <h1>Restoring Lives Through Compassion</h1>
                     <p>Welcome to Queen of Peace Rehabilitation Centre — offering hope, healing, and transformation for individuals battling addiction.</p>
                     <div class="hero-buttons">
-                        <a href="/donate" class="btn-primary">💝 Donate Now</a>
+                        <a href="/donate" class="btn-primary">Donate Now</a>
                         <a href="/about" class="btn-secondary">Learn More</a>
                     </div>
                 </div>

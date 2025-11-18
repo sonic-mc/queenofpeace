@@ -623,7 +623,7 @@
       <div class="top-bar-left">
         <a href="tel:+263xxxxxxxxx">
           <i class="fas fa-phone"></i>
-          <span>+263 xxx xxx xxx</span>
+          <span>+263 77 7942 996</span>
         </a>
         <a href="mailto:info@queenofpeacerehab.org">
           <i class="fas fa-envelope"></i>
@@ -690,7 +690,7 @@
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><a href="/donate" style="color: var(--primary-blue); font-weight: 700;">💝 Donate Now</a></li>
+        <li><a href="/donate" style="color: var(--primary-blue); font-weight: 700;">Donate Now</a></li>
       </ul>
     </div>
   </nav>
@@ -744,7 +744,7 @@
               <i class="fas fa-phone"></i>
               <div>
                 <strong>Phone:</strong><br>
-                +263 xxx xxx xxx
+                +263 777 942 996
               </div>
             </div>
             <div class="contact-item">
@@ -759,7 +759,7 @@
       </div>
 
       <div class="footer-bottom">
-        © {{ date('Y') }} Queen of Peace Rehab. All rights reserved. | Designed with <i class="fas fa-heart"></i> for a better tomorrow
+        ©2006 - {{ date('Y') }} Queen of Peace Rehab. All rights reserved. | Designed with by <i class="fas fa-heart"></i>
       </div>
     </div>
   </footer>
