@@ -88,11 +88,6 @@
   .hero-text {
     max-width: 950px;
     padding: 50px 45px;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px) saturate(180%);
-    border-radius: 24px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   }
 
   .hero-text h1 {
@@ -100,7 +95,7 @@
     font-size: 3.8rem;
     font-weight: 900;
     margin-bottom: 1.8rem;
-    color: white;
+    color: white !important;
     line-height: 1.15;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6);
     letter-spacing: -0.02em;
@@ -110,7 +105,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
-    color: rgba(255, 255, 255, 1);
+    color: white !important;
     line-height: 1.7;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     font-weight: 400;
@@ -135,11 +130,14 @@
     border: none;
     font-family: 'Inter', sans-serif;
     letter-spacing: -0.01em;
+    text-decoration: none;
+    display: inline-block;
   }
 
   .btn-primary:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 15px 35px rgba(0, 102, 255, 0.6);
+    color: white;
   }
 
   .btn-secondary {
@@ -154,6 +152,8 @@
     backdrop-filter: blur(10px);
     font-family: 'Inter', sans-serif;
     letter-spacing: -0.01em;
+    text-decoration: none;
+    display: inline-block;
   }
 
   .btn-secondary:hover {
