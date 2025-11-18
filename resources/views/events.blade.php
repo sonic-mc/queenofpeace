@@ -11,7 +11,7 @@
   .events-hero {
     position: relative;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.92) 0%, rgba(5, 150, 105, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop') center/cover;
     color: white;
     text-align: center;
@@ -58,8 +58,9 @@
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.02em;
+    color: white;
   }
 
   .breadcrumb {
@@ -70,11 +71,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   .breadcrumb a {
     color: white;
     transition: opacity 0.3s ease;
+    text-decoration: none;
   }
 
   .breadcrumb a:hover {
@@ -93,13 +97,13 @@
 
   /* Featured Event */
   .featured-event {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
     border-radius: 24px;
     padding: 50px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
-    border: 2px solid rgba(16, 185, 129, 0.1);
+    border: 2px solid rgba(0, 102, 255, 0.1);
     animation: slideIn 0.8s ease-out;
   }
 
@@ -121,7 +125,7 @@
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.1) 0%, transparent 70%);
     animation: rotate 20s linear infinite;
   }
 
@@ -132,7 +136,7 @@
 
   .featured-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 50px;
@@ -141,7 +145,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
   }
 
   .featured-event h2 {
@@ -171,20 +175,21 @@
     align-items: center;
     gap: 10px;
     padding: 16px 40px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.1rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
     position: relative;
     z-index: 1;
+    text-decoration: none;
   }
 
   .btn-primary:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.5);
   }
 
   /* Events Grid */
@@ -225,12 +230,12 @@
 
   .event-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.15);
-    border-color: #10b981;
+    box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+    border-color: #0066FF;
   }
 
   .event-date {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     padding: 40px 35px;
     text-align: center;
@@ -307,7 +312,7 @@
   }
 
   .event-meta-item i {
-    color: #10b981;
+    color: #0066FF;
     font-size: 1.1rem;
     width: 20px;
   }
@@ -341,7 +346,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(135deg, #10b981 0%, #f59e0b 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #3385FF 100%);
     border-radius: 2px;
   }
 
@@ -357,7 +362,7 @@
 
   /* CTA Section */
   .cta-section {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 100px 20px;
     text-align: center;
     color: white;
@@ -403,7 +408,7 @@
     font-family: 'Inter', sans-serif;
     padding: 18px 45px;
     background: white;
-    color: #10b981;
+    color: #0066FF;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.15rem;
@@ -412,17 +417,22 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
   }
 
   .btn-secondary:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background: #f59e0b;
+    background: #3385FF;
     color: white;
   }
 
   /* Responsive */
   @media (max-width: 768px) {
+    .events-hero {
+      padding: 60px 20px;
+    }
+
     .events-hero h1 {
       font-size: 2rem;
     }

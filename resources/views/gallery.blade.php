@@ -11,7 +11,7 @@
   .gallery-hero {
     position: relative;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.92) 0%, rgba(5, 150, 105, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop') center/cover;
     color: white;
     text-align: center;
@@ -58,8 +58,9 @@
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.02em;
+    color: white;
   }
 
   .gallery-hero p {
@@ -67,6 +68,8 @@
     font-size: 1.3rem;
     opacity: 0.95;
     line-height: 1.7;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   /* Section */
@@ -102,16 +105,16 @@
   }
 
   .filter-btn:hover {
-    border-color: #10b981;
-    color: #10b981;
+    border-color: #0066FF;
+    color: #0066FF;
     transform: translateY(-2px);
   }
 
   .filter-btn.active {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    border-color: #10b981;
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
+    border-color: #0066FF;
     color: white;
-    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 102, 255, 0.3);
   }
 
   /* Gallery Grid */
@@ -156,7 +159,7 @@
 
   .gallery-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 102, 255, 0.2);
   }
 
   .gallery-img {
@@ -176,7 +179,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(31, 41, 55, 0.75) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.85) 0%, rgba(0, 82, 204, 0.75) 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
     display: flex;
@@ -303,7 +306,7 @@
   }
 
   .modal-nav:hover {
-    background: rgba(16, 185, 129, 0.8);
+    background: rgba(0, 102, 255, 0.8);
     transform: translateY(-50%) scale(1.1);
   }
 
@@ -312,7 +315,7 @@
 
   /* Stats Section */
   .stats-section {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 70px 20px;
     margin-top: 80px;
     text-align: center;
@@ -376,8 +379,16 @@
 
   /* Responsive */
   @media (max-width: 768px) {
+    .gallery-hero {
+      padding: 60px 20px;
+    }
+
     .gallery-hero h1 {
       font-size: 2rem;
+    }
+
+    .gallery-hero p {
+      font-size: 1.1rem;
     }
 
     .gallery-grid {

@@ -11,7 +11,7 @@
   .contact-hero {
     position: relative;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.92) 0%, rgba(5, 150, 105, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop') center/cover;
     color: white;
     text-align: center;
@@ -58,8 +58,9 @@
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.02em;
+    color: white;
   }
 
   .contact-hero p {
@@ -67,6 +68,8 @@
     font-size: 1.3rem;
     opacity: 0.95;
     line-height: 1.7;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   /* Section */
@@ -130,7 +133,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
-    color: #10b981;
+    color: #0066FF;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 10px;
@@ -150,8 +153,18 @@
     line-height: 1.7;
   }
 
+  .contact-item-value a {
+    color: #0066FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-item-value a:hover {
+    color: #0052CC;
+  }
+
   .contact-person {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
     border-radius: 16px;
     padding: 20px;
     margin-top: 30px;
@@ -174,7 +187,17 @@
   }
 
   .contact-person strong {
-    color: #10b981;
+    color: #0066FF;
+  }
+
+  .contact-person a {
+    color: #0066FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-person a:hover {
+    color: #0052CC;
   }
 
   /* Contact Form Card */
@@ -226,8 +249,8 @@
 
   .form-control:focus {
     outline: none;
-    border-color: #10b981;
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+    border-color: #0066FF;
+    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
   }
 
   textarea.form-control {
@@ -252,7 +275,7 @@
   .btn-submit {
     font-family: 'Inter', sans-serif;
     padding: 16px 45px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-weight: 700;
     border-radius: 50px;
@@ -260,7 +283,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -268,7 +291,7 @@
 
   .btn-submit:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.5);
   }
 
   /* Map Section */
@@ -287,7 +310,7 @@
 
   /* Quick Contact */
   .quick-contact {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 80px 20px;
     text-align: center;
     color: white;
@@ -345,7 +368,7 @@
     font-family: 'Inter', sans-serif;
     padding: 16px 35px;
     background: white;
-    color: #10b981;
+    color: #0066FF;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.05rem;
@@ -354,12 +377,13 @@
     align-items: center;
     gap: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
   }
 
   .btn-quick:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-    background: #f59e0b;
+    background: #3385FF;
     color: white;
   }
 
@@ -375,8 +399,16 @@
   }
 
   @media (max-width: 768px) {
+    .contact-hero {
+      padding: 60px 20px;
+    }
+
     .contact-hero h1 {
       font-size: 2rem;
+    }
+
+    .contact-hero p {
+      font-size: 1.1rem;
     }
 
     .contact-info-card,
@@ -424,8 +456,8 @@
                             Email
                         </div>
                         <div class="contact-item-value">
-                            <a href="mailto:queenofpeace.org@gmail.com" style="color: #10b981; text-decoration: none;">queenofpeace.org@gmail.com</a><br>
-                            <a href="mailto:queenofpeace21@yahoo.com" style="color: #10b981; text-decoration: none;">queenofpeace21@yahoo.com</a>
+                            <a href="mailto:queenofpeace.org@gmail.com">queenofpeace.org@gmail.com</a><br>
+                            <a href="mailto:queenofpeace21@yahoo.com">queenofpeace21@yahoo.com</a>
                         </div>
                     </div>
 
@@ -435,8 +467,8 @@
                             Phone
                         </div>
                         <div class="contact-item-value">
-                            <a href="tel:+263714375268" style="color: #10b981; text-decoration: none;">+263 71 437 5268</a><br>
-                            <a href="tel:+263719932695" style="color: #10b981; text-decoration: none;">+263 71 993 2695</a>
+                            <a href="tel:+263714375268">+263 71 437 5268</a><br>
+                            <a href="tel:+263719932695">+263 71 993 2695</a>
                         </div>
                     </div>
 
@@ -444,7 +476,7 @@
                         <h5>Executive Director</h5>
                         <p>
                             <strong>Mrs Stella Khumalo Gaihai Punungwe</strong><br>
-                            <a href="tel:+263772600778" style="color: #10b981; text-decoration: none;">+263 772 600 778</a>
+                            <a href="tel:+263772600778">+263 772 600 778</a>
                         </p>
                     </div>
 
@@ -452,11 +484,11 @@
                         <h5>Other Contacts</h5>
                         <p>
                             <strong>Mr. T. Kupemba</strong><br>
-                            <a href="tel:+263785296888" style="color: #10b981; text-decoration: none;">+263 785 296 888</a>
+                            <a href="tel:+263785296888">+263 785 296 888</a>
                         </p>
                         <p>
                             <strong>Mr. T. Marodza</strong><br>
-                            <a href="tel:+263779341940" style="color: #10b981; text-decoration: none;">+263 779 341 940</a>
+                            <a href="tel:+263779341940">+263 779 341 940</a>
                         </p>
                     </div>
                 </div>

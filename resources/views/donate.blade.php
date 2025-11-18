@@ -11,7 +11,7 @@
   .donate-hero {
     position: relative;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.92) 0%, rgba(5, 150, 105, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop') center/cover;
     color: white;
     text-align: center;
@@ -58,8 +58,9 @@
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.02em;
+    color: white;
   }
 
   .donate-hero p {
@@ -67,6 +68,8 @@
     font-size: 1.3rem;
     opacity: 0.95;
     line-height: 1.7;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   /* Section */
@@ -143,7 +146,7 @@
 
   .donation-type-tab.active {
     background: white;
-    color: #10b981;
+    color: #0066FF;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -169,15 +172,15 @@
   }
 
   .amount-btn:hover {
-    border-color: #10b981;
-    background: rgba(16, 185, 129, 0.05);
+    border-color: #0066FF;
+    background: rgba(0, 102, 255, 0.05);
   }
 
   .amount-btn.selected {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    border-color: #10b981;
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
+    border-color: #0066FF;
     color: white;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
   }
 
   /* Custom Amount */
@@ -222,8 +225,8 @@
 
   .amount-input:focus {
     outline: none;
-    border-color: #10b981;
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+    border-color: #0066FF;
+    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
   }
 
   /* Form Group */
@@ -257,8 +260,8 @@
 
   .form-control:focus {
     outline: none;
-    border-color: #10b981;
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+    border-color: #0066FF;
+    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
   }
 
   .form-row {
@@ -291,13 +294,13 @@
   }
 
   .payment-method:hover {
-    border-color: #10b981;
-    background: rgba(16, 185, 129, 0.05);
+    border-color: #0066FF;
+    background: rgba(0, 102, 255, 0.05);
   }
 
   .payment-method.selected {
-    border-color: #10b981;
-    background: rgba(16, 185, 129, 0.1);
+    border-color: #0066FF;
+    background: rgba(0, 102, 255, 0.1);
   }
 
   .payment-radio {
@@ -309,7 +312,7 @@
   }
 
   .payment-method.selected .payment-radio {
-    border-color: #10b981;
+    border-color: #0066FF;
   }
 
   .payment-method.selected .payment-radio::after {
@@ -320,7 +323,7 @@
     transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
-    background: #10b981;
+    background: #0066FF;
     border-radius: 50%;
   }
 
@@ -344,7 +347,7 @@
 
   .payment-method-icon {
     font-size: 1.8rem;
-    color: #10b981;
+    color: #0066FF;
   }
 
   /* Anonymous Donation */
@@ -383,7 +386,7 @@
   .btn-donate {
     width: 100%;
     padding: 18px;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -392,7 +395,7 @@
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,12 +404,12 @@
 
   .btn-donate:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(245, 158, 11, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.5);
   }
 
   /* Donation Summary Card */
   .donation-summary-card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
     border-radius: 24px;
     padding: 35px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
@@ -434,14 +437,14 @@
   }
 
   .impact-item:hover {
-    border-color: #10b981;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1);
+    border-color: #0066FF;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.1);
   }
 
   .impact-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -489,7 +492,7 @@
   }
 
   .trust-badge i {
-    color: #10b981;
+    color: #0066FF;
     font-size: 1.2rem;
   }
 
@@ -527,15 +530,15 @@
   }
 
   .other-way-item:hover {
-    border-color: #10b981;
-    background: rgba(16, 185, 129, 0.05);
+    border-color: #0066FF;
+    background: rgba(0, 102, 255, 0.05);
     transform: translateY(-5px);
   }
 
   .other-way-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -568,13 +571,23 @@
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
-    color: #10b981;
+    color: #0066FF;
   }
 
   /* Testimonials */
   .testimonials-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
+  }
+
+  .section-title {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
   }
 
   .testimonials-grid {
@@ -610,7 +623,7 @@
   .author-avatar {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -656,8 +669,16 @@
   }
 
   @media (max-width: 768px) {
+    .donate-hero {
+      padding: 60px 20px;
+    }
+
     .donate-hero h1 {
       font-size: 2rem;
+    }
+
+    .donate-hero p {
+      font-size: 1.1rem;
     }
 
     .amount-grid {

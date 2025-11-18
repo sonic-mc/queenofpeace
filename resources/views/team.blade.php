@@ -11,7 +11,7 @@
   .team-hero {
     position: relative;
     height: 50vh;
-    background: linear-gradient(135deg, rgba(0, 168, 107, 0.92) 0%, rgba(44, 62, 80, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1920') center/cover;
     display: flex;
     align-items: center;
@@ -41,13 +41,16 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    color: white !important;
   }
 
   .team-hero p {
     font-size: 1.3rem;
     opacity: 0.95;
     line-height: 1.7;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: white !important;
   }
 
   /* Section Styles */
@@ -88,11 +91,27 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     position: relative;
+    opacity: 0;
+    animation: fadeInScale 0.6s ease-out forwards;
+  }
+
+  .team-card:nth-child(1) { animation-delay: 0.1s; }
+  .team-card:nth-child(2) { animation-delay: 0.2s; }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
   }
 
   .team-card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 20px 60px rgba(0, 168, 107, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
   }
 
   .team-card::before {
@@ -102,7 +121,7 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(135deg, #00a86b 0%, #ffa500 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #3385FF 100%);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -114,7 +133,7 @@
   .team-card-header {
     position: relative;
     height: 300px;
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,7 +187,7 @@
   .team-role {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #00a86b;
+    color: #0066FF;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -197,16 +216,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-size: 1.2rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 168, 107, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+    text-decoration: none;
   }
 
   .social-link:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 168, 107, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.5);
   }
 
   .social-link.linkedin:hover {
@@ -218,7 +238,7 @@
   }
 
   .social-link.email:hover {
-    background: #ffa500;
+    background: #3385FF;
   }
 
   /* Carousel Controls */
@@ -234,7 +254,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -243,12 +263,12 @@
     justify-content: center;
     font-size: 1.3rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0, 168, 107, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 102, 255, 0.3);
   }
 
   .carousel-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 30px rgba(0, 168, 107, 0.5);
+    box-shadow: 0 8px 30px rgba(0, 102, 255, 0.5);
   }
 
   .carousel-btn:disabled {
@@ -271,14 +291,14 @@
   }
 
   .carousel-dot.active {
-    background: #00a86b;
+    background: #0066FF;
     width: 35px;
     border-radius: 10px;
   }
 
   /* CTA Section */
   .cta-section {
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 100px 20px;
     text-align: center;
     color: white;
@@ -325,7 +345,7 @@
   .btn-cta {
     padding: 18px 50px;
     background: white;
-    color: #00a86b;
+    color: #0066FF;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.15rem;
@@ -334,19 +354,34 @@
     align-items: center;
     gap: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
   }
 
   .btn-cta:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background: #ffa500;
+    background: #3385FF;
     color: white;
   }
 
   /* Responsive */
   @media (max-width: 768px) {
+    .team-hero {
+      height: auto;
+      min-height: 50vh;
+      padding: 60px 20px;
+    }
+
+    .team-hero-content {
+      padding: 30px 25px;
+    }
+
     .team-hero h1 {
       font-size: 2rem;
+    }
+
+    .team-hero p {
+      font-size: 1.1rem;
     }
 
     .team-slide {

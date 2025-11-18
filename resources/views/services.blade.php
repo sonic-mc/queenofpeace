@@ -11,7 +11,7 @@
   .services-hero {
     position: relative;
     height: 50vh;
-    background: linear-gradient(135deg, rgba(0, 168, 107, 0.92) 0%, rgba(44, 62, 80, 0.88) 100%),
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1608052026785-0bc249c733e3?q=80&w=1920') center/cover;
     display: flex;
     align-items: center;
@@ -41,7 +41,8 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    color: white !important;
   }
 
   .breadcrumb {
@@ -51,15 +52,26 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: white !important;
   }
 
   .breadcrumb a {
-    color: white;
+    color: white !important;
     transition: opacity 0.3s ease;
+    text-decoration: none;
   }
 
   .breadcrumb a:hover {
     opacity: 0.8;
+  }
+
+  .breadcrumb span {
+    color: white !important;
+  }
+
+  .breadcrumb i {
+    color: white !important;
   }
 
   /* Section Styles */
@@ -101,16 +113,33 @@
     transition: all 0.4s ease;
     overflow: hidden;
     border: 2px solid transparent;
+    opacity: 0;
+    animation: fadeInScale 0.6s ease-out forwards;
+  }
+
+  .service-card:nth-child(1) { animation-delay: 0.1s; }
+  .service-card:nth-child(2) { animation-delay: 0.2s; }
+  .service-card:nth-child(3) { animation-delay: 0.3s; }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
   }
 
   .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 168, 107, 0.15);
-    border-color: #00a86b;
+    box-shadow: 0 20px 50px rgba(0, 102, 255, 0.15);
+    border-color: #0066FF;
   }
 
   .service-header {
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 40px 30px;
     color: white;
     position: relative;
@@ -189,7 +218,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(135deg, #00a86b 0%, #ffa500 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #3385FF 100%);
     border-radius: 2px;
   }
 
@@ -206,21 +235,21 @@
     padding: 35px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
-    border-left: 5px solid #00a86b;
+    border-left: 5px solid #0066FF;
     display: flex;
     gap: 20px;
   }
 
   .program-card:hover {
     transform: translateX(10px);
-    box-shadow: 0 12px 35px rgba(0, 168, 107, 0.12);
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.12);
   }
 
   .program-number {
     width: 50px;
     height: 50px;
     min-width: 50px;
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -228,11 +257,11 @@
     justify-content: center;
     font-weight: 800;
     font-size: 1.3rem;
-    box-shadow: 0 4px 15px rgba(0, 168, 107, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
   }
 
   .program-content h3 {
-    color: #00a86b;
+    color: #0066FF;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 15px;
@@ -247,7 +276,7 @@
 
   /* Approach Section */
   .approach-section {
-    background: linear-gradient(135deg, rgba(0, 168, 107, 0.05) 0%, rgba(255, 165, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
   }
 
   .approach-content {
@@ -280,20 +309,28 @@
   }
 
   .pillar {
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     padding: 25px 20px;
     border-radius: 15px;
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 168, 107, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
     transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
   }
+
+  .pillar:nth-child(1) { animation-delay: 0.1s; }
+  .pillar:nth-child(2) { animation-delay: 0.2s; }
+  .pillar:nth-child(3) { animation-delay: 0.3s; }
+  .pillar:nth-child(4) { animation-delay: 0.4s; }
+  .pillar:nth-child(5) { animation-delay: 0.5s; }
 
   .pillar:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 168, 107, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 102, 255, 0.4);
   }
 
   .pillar i {
@@ -304,7 +341,7 @@
 
   /* CTA Section */
   .cta-section {
-    background: linear-gradient(135deg, #00a86b 0%, #008f5a 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     padding: 80px 20px;
     text-align: center;
     color: white;
@@ -351,7 +388,7 @@
   .btn-cta {
     padding: 18px 50px;
     background: white;
-    color: #00a86b;
+    color: #0066FF;
     font-weight: 700;
     border-radius: 50px;
     font-size: 1.15rem;
@@ -360,17 +397,28 @@
     align-items: center;
     gap: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
   }
 
   .btn-cta:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background: #ffa500;
+    background: #3385FF;
     color: white;
   }
 
   /* Responsive */
   @media (max-width: 768px) {
+    .services-hero {
+      height: auto;
+      min-height: 50vh;
+      padding: 60px 20px;
+    }
+
+    .services-hero-content {
+      padding: 30px 25px;
+    }
+
     .services-hero h1 {
       font-size: 2rem;
     }

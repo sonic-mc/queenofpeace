@@ -19,10 +19,6 @@
     max-width: 1000px;
     padding: 40px;
     animation: fadeInUp 1s ease-out;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
   }
 
   @keyframes fadeInUp {
@@ -41,14 +37,16 @@
     font-weight: 800;
     margin-bottom: 25px;
     line-height: 1.2;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    color: white !important;
   }
 
   .about-hero p {
     font-size: 1.25rem;
     line-height: 1.8;
     opacity: 0.95;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: white !important;
   }
 
   /* Section Styles */
