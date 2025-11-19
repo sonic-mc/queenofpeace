@@ -467,71 +467,113 @@
 
     <!-- Introduction Section -->
     <section class="section">
-        <div class="container">
-            <div class="intro-text">
-                <p>
-                    Queen of Peace Institute for Community Mental Health Innovations and Rehabilitation operates purpose-built,
-                    fully staffed rehabilitation homes located in Gweru, Midlands Province, Zimbabwe. These facilities provide a
-                    safe, structured, and healing environment for individuals battling addiction, mental health challenges, and
-                    social dislocation.
-                </p>
-                <p>
-                    Each home is designed to offer holistic, client-centered care focused on long-term recovery, reintegration, and
-                    personal transformation. Our rehabilitation homes are anchored in our belief that recovery is not only
-                    possible, but sustainable when individuals are provided with evidence-based treatment, compassionate support,
-                    and meaningful opportunities for personal growth.
-                </p>
-            </div>
+      <div class="container">
+          <div class="intro-text">
+              <p>
+                  <strong>A Second of Hope for Community Mental Health and Rehabilitation</strong>
+              </p>
+              <p>
+                  Queen of Peace Institute for Community Mental Health Innovations and Rehabilitation operates purpose-built,
+                  fully staffed rehabilitation homes located in Gweru, Midlands Province, Zimbabwe. These facilities provide a
+                  safe, structured, and healing environment for individuals battling addiction, mental health challenges, and
+                  social dislocation.
+              </p>
+              <p>
+                  Each home is designed to offer holistic, client-centered care focused on long-term recovery, reintegration, and
+                  personal transformation. Our rehabilitation homes are anchored in our belief that recovery is not only
+                  possible, but sustainable when individuals are provided with evidence-based treatment, compassionate support,
+                  and meaningful opportunities for personal growth.
+              </p>
+          </div>
 
-            <!-- Main Services Grid -->
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <i class="bi bi-capsule"></i>
-                        </div>
-                        <h3>Drug Addiction Treatment Centre</h3>
-                    </div>
-                    <div class="service-body">
-                        <p>
-                            A medically informed, psychologically grounded program designed to treat substance use disorders through
-                            detoxification, therapy, and relapse prevention.
-                        </p>
-                    </div>
-                </div>
+          {{-- <h2 class="services-title">Our Services</h2> --}}
 
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <i class="bi bi-hospital"></i>
-                        </div>
-                        <h3>Residential Rehabilitation and Crisis Centre</h3>
-                    </div>
-                    <div class="service-body">
-                        <p>
-                            A 24/7 safe haven offering intensive inpatient treatment and crisis intervention services for individuals
-                            facing acute mental health or psychosocial crises.
-                        </p>
-                    </div>
-                </div>
+          <!-- Main Services Grid -->
+          <div class="services-grid">
+              <div class="service-card">
+                  <div class="service-header">
+                      <div class="service-icon">
+                          <i class="bi bi-capsule"></i>
+                      </div>
+                      <h3>Addiction Treatment and Rehab</h3>
+                  </div>
+                  <div class="service-body">
+                      <p>
+                          A medically informed, psychologically grounded program designed to treat substance use disorders through
+                          detoxification, therapy, and relapse prevention.
+                      </p>
+                  </div>
+              </div>
 
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <h3>Occupational and Community Reintegration & Therapeutic Centre</h3>
-                    </div>
-                    <div class="service-body">
-                        <p>
-                            Focused on preparing clients for independent living, this program offers skill-building, psychosocial
-                            therapy, and reintegration services to support long-term recovery and self-sufficiency.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+              <div class="service-card">
+                  <div class="service-header">
+                      <div class="service-icon">
+                          <i class="bi bi-building"></i>
+                      </div>
+                      <h3>Community Rehab and Vocational Training Centre</h3>
+                  </div>
+                  <div class="service-body">
+                      <p>
+                          Focused on preparing clients for independent living through skill-building, vocational training, and 
+                          community reintegration services to support long-term recovery and self-sufficiency.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="service-card">
+                  <div class="service-header">
+                      <div class="service-icon">
+                          <i class="bi bi-heart-pulse"></i>
+                      </div>
+                      <h3>Rehab for Co-Occurring Mental Health Issues</h3>
+                  </div>
+                  <div class="service-body">
+                      <p>
+                          Specialized care for individuals with co-occurring mental health conditions, offering life skills training, 
+                          medication adherence support, and economic empowerment projects for sustainable recovery.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="service-card">
+                  <div class="service-header">
+                      <div class="service-icon">
+                          <i class="bi bi-megaphone"></i>
+                      </div>
+                      <h3>Mental Health Promotion and Prevention</h3>
+                  </div>
+                  <div class="service-body">
+                      <p>
+                          Community-based programs promoting mental wellness through:
+                      </p>
+                      <ul>
+                          <li>Sport and recreational activities</li>
+                          <li>Awareness campaigns</li>
+                          <li>Economic empowerment projects</li>
+                          <li>Boot camps</li>
+                          <li>Women and girls programs</li>
+                          <li>Men and boys programs</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="service-card">
+                  <div class="service-header">
+                      <div class="service-icon">
+                          <i class="bi bi-stars"></i>
+                      </div>
+                      <h3>Centre for Children with Special Needs</h3>
+                  </div>
+                  <div class="service-body">
+                      <p>
+                          Dedicated support for children with special needs and their families, providing life skills training 
+                          and caregiver respite services in a nurturing and therapeutic environment.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- Programs Section -->
     <section class="section programs-section">

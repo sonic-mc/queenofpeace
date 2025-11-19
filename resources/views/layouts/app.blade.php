@@ -559,6 +559,7 @@
       }
     }
 
+    /* MOBILE FOOTER OPTIMIZATION */
     @media (max-width: 768px) {
       .top-bar {
         font-size: 13px;
@@ -590,17 +591,165 @@
         display: none;
       }
 
-      .footer-content {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
-
       .logo {
         font-size: 20px;
       }
 
       .logo i {
         font-size: 28px;
+      }
+
+      /* MINIMAL FOOTER FOR MOBILE */
+      footer {
+        padding: 35px 0 20px;
+        margin-top: 50px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 14px;
+      }
+
+      .footer-section h3::after {
+        width: 30px;
+        height: 2px;
+        bottom: -6px;
+      }
+
+      .footer-section p {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-section ul li a {
+        font-size: 13px;
+        gap: 8px;
+      }
+
+      .footer-section ul li a i {
+        font-size: 10px;
+      }
+
+      .contact-info {
+        gap: 12px;
+      }
+
+      .contact-item {
+        padding: 8px;
+        gap: 10px;
+      }
+
+      .contact-item i {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+      }
+
+      .contact-item div {
+        font-size: 12px;
+      }
+
+      .contact-item strong {
+        font-size: 12px;
+      }
+
+      .social-icons {
+        margin-top: 15px !important;
+        gap: 8px;
+      }
+
+      .social-icons a {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+      }
+
+      .footer-bottom {
+        padding-top: 20px;
+        font-size: 11px;
+      }
+    }
+
+    /* EXTRA SMALL MOBILE (320px - 479px) */
+    @media (max-width: 479px) {
+      footer {
+        padding: 30px 0 18px;
+        margin-top: 40px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .footer-content {
+        gap: 20px;
+      }
+
+      .footer-section h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .footer-section p {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-section ul li a {
+        font-size: 12px;
+        gap: 6px;
+        padding: 4px 0;
+      }
+
+      .contact-info {
+        gap: 10px;
+      }
+
+      .contact-item {
+        padding: 6px;
+        gap: 8px;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .contact-item i {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+      }
+
+      .contact-item div {
+        font-size: 11px;
+      }
+
+      .social-icons {
+        margin-top: 12px !important;
+        gap: 6px;
+      }
+
+      .social-icons a {
+        width: 26px;
+        height: 26px;
+        font-size: 10px;
+      }
+
+      .footer-bottom {
+        padding-top: 15px;
+        font-size: 10px;
+        line-height: 1.6;
       }
     }
 
@@ -621,7 +770,7 @@
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-left">
-        <a href="tel:+263xxxxxxxxx">
+        <a href="tel:+263777942996">
           <i class="fas fa-phone"></i>
           <span>+263 77 7942 996</span>
         </a>
@@ -636,6 +785,10 @@
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <span style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 10px;"></span>
+          <a href="{{ route('admin.login') }}" aria-label="Admin Login" title="Admin Login" style="font-size: 1rem;">
+            <i class="fas fa-user-shield"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -759,8 +912,18 @@
       </div>
 
       <div class="footer-bottom">
-        ©2006 - {{ date('Y') }} Queen of Peace Rehab. All rights reserved. | Designed with by <i class="fas fa-heart"></i>
-      </div>
+        ©2006 - {{ date('Y') }} Queen of Peace Rehab. All rights reserved. |
+    
+        <a href="https://wa.me/263772131956" target="_blank" style="color: #f8faf9; text-decoration: none;">
+            Website by Dataspruce
+        </a>
+    
+        <a href="https://wa.me/263772131956" target="_blank" style="margin-left: 5px; color: #f8faf9;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+    
     </div>
   </footer>
 

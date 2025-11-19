@@ -410,173 +410,173 @@
 
     <!-- Team Members Carousel -->
     <section class="section">
-        <div class="container">
-            <div class="team-carousel">
-                <div class="team-carousel-inner" id="teamCarousel">
-                    <!-- Slide 1 -->
-                    <div class="team-slide">
-                        <!-- Dr Stella -->
-                        <div class="team-card">
-                            <div class="team-card-header">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" 
-                                     alt="Dr. Stella Khumalo Punungwe" 
-                                     class="team-profile-img">
-                            </div>
-                            <div class="team-card-body">
-                                <h3 class="team-name">Dr. Stella Khumalo Punungwe</h3>
-                                <p class="team-role">
-                                    <i class="bi bi-award"></i>
-                                    Public Mental Health Specialist
-                                </p>
-                                <p class="team-bio">
-                                    Dr. Stella Punungwe Khumalo is the Founder of Queen of Peace Institute for Community Mental Health
-                                    Innovations and Rehabilitation (PVO 28/13). She holds a Doctorate in Public Mental Health, an
-                                    Honorary DSci from Open Christian University, an MSc in Mental Health Nursing, a Bachelor's in
-                                    Psychology, and diplomas in General and Mental Health Nursing.
-                                    <br><br>
-                                    She has coordinated the removal and rehabilitation of over 70 mentally ill individuals from the
-                                    streets of Gweru, hosted the global 2009 World Mental Health Day, and leads large-scale community
-                                    campaigns against substance abuse.
-                                </p>
-                                <div class="team-social">
-                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-link twitter" aria-label="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="mailto:stella@queenofpeace.org" class="social-link email" aria-label="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Dr Blazio -->
-                        <div class="team-card">
-                            <div class="team-card-header">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
-                                     alt="Dr. Blazio M. Manobo" 
-                                     class="team-profile-img">
-                            </div>
-                            <div class="team-card-body">
-                                <h3 class="team-name">Dr. Blazio M. Manobo</h3>
-                                <p class="team-role">
-                                    <i class="bi bi-person-badge"></i>
-                                    Vice Chairman
-                                </p>
-                                <p class="team-bio">
-                                    Dr Blazio M Manobo is a Social Scientist, Researcher, and Development Practitioner specializing in
-                                    inclusivity research and programming. He has published several articles in theology and development
-                                    and contributes to multiple Boards of Directors, advancing mental health programs nationwide.
-                                    <br><br>
-                                    He is a senior lecturer and strategist for youth-focused programs.
-                                </p>
-                                <div class="team-social">
-                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-link twitter" aria-label="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="mailto:blazio@queenofpeace.org" class="social-link email" aria-label="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="team-slide">
-                        <!-- Trevor Punungwe -->
-                        <div class="team-card">
-                            <div class="team-card-header">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
-                                     alt="Trevor M. Punungwe" 
-                                     class="team-profile-img">
-                            </div>
-                            <div class="team-card-body">
-                                <h3 class="team-name">Trevor M. Punungwe</h3>
-                                <p class="team-role">
-                                    <i class="bi bi-laptop"></i>
-                                    Director – IT & Youth Engagement
-                                </p>
-                                <p class="team-bio">
-                                    Trevor oversees digital transformation and youth-centered programming, ensuring mental health
-                                    services are accessible through technology. With a background in Data Science and Informatics, he
-                                    leads innovation, digital strategy, and youth engagement initiatives that empower young people
-                                    through modern wellness interventions.
-                                </p>
-                                <div class="team-social">
-                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-link twitter" aria-label="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="mailto:trevor@queenofpeace.org" class="social-link email" aria-label="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Alington Mudzingwa -->
-                        <div class="team-card">
-                            <div class="team-card-header">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" 
-                                     alt="Alington Mudzingwa" 
-                                     class="team-profile-img">
-                            </div>
-                            <div class="team-card-body">
-                                <h3 class="team-name">Alington Mudzingwa</h3>
-                                <p class="team-role">
-                                    <i class="bi bi-briefcase"></i>
-                                    Board Member
-                                </p>
-                                <p class="team-bio">
-                                    Alington is a development strategist and advocate for inclusive mental health integration. As a
-                                    Board Member, he supports governance, strategic planning, and evidence-based interventions.
-                                    <br><br>
-                                    He is the Founder & CEO of ALIEUM Investments and has served on the Board of Gweru Polytechnic.
-                                    Currently pursuing a Master's in Public Policy in Thailand, he brings expertise spanning mental
-                                    health, education, and economic empowerment.
-                                </p>
-                                <div class="team-social">
-                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-link twitter" aria-label="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="mailto:alington@queenofpeace.org" class="social-link email" aria-label="Email">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carousel Controls -->
-                <div class="carousel-controls">
-                    <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    
-                    <div class="carousel-indicators">
-                        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
-                        <span class="carousel-dot" onclick="goToSlide(1)"></span>
-                    </div>
-                    
-                    <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="container">
+          <div class="team-carousel">
+              <div class="team-carousel-inner" id="teamCarousel">
+                  <!-- Slide 1 -->
+                  <div class="team-slide">
+                      <!-- Dr Stella -->
+                      <div class="team-card">
+                          <div class="team-card-header">
+                              <img src="{{ asset('images/directors/stella (1).jpeg') }}" 
+                                   alt="Dr. Stella Khumalo Punungwe" 
+                                   class="team-profile-img">
+                          </div>
+                          <div class="team-card-body">
+                              <h3 class="team-name">Dr. Stella Khumalo Punungwe</h3>
+                              <p class="team-role">
+                                  <i class="bi bi-award"></i>
+                                  Public Mental Health Specialist
+                              </p>
+                              <p class="team-bio">
+                                  Dr. Stella Punungwe Khumalo is the Founder of Queen of Peace Institute for Community Mental Health
+                                  Innovations and Rehabilitation (PVO 28/13). She holds a Doctorate in Public Mental Health, an
+                                  Honorary DSci from Open Christian University, an MSc in Mental Health Nursing, a Bachelor's in
+                                  Psychology, and diplomas in General and Mental Health Nursing.
+                                  <br><br>
+                                  She has coordinated the removal and rehabilitation of over 70 mentally ill individuals from the
+                                  streets of Gweru, hosted the global 2009 World Mental Health Day, and leads large-scale community
+                                  campaigns against substance abuse.
+                              </p>
+                              <div class="team-social">
+                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                      <i class="bi bi-linkedin"></i>
+                                  </a>
+                                  <a href="#" class="social-link twitter" aria-label="Twitter">
+                                      <i class="bi bi-twitter"></i>
+                                  </a>
+                                  <a href="mailto:stella@queenofpeace.org" class="social-link email" aria-label="Email">
+                                      <i class="bi bi-envelope"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Dr Blazio -->
+                      <div class="team-card">
+                          <div class="team-card-header">
+                              <img src="{{ asset('images/directors/dr-manobo.jpeg') }}" 
+                                   alt="Dr. Blazio M. Manobo" 
+                                   class="team-profile-img">
+                          </div>
+                          <div class="team-card-body">
+                              <h3 class="team-name">Dr. Blazio M. Manobo</h3>
+                              <p class="team-role">
+                                  <i class="bi bi-person-badge"></i>
+                                  Vice Chairman
+                              </p>
+                              <p class="team-bio">
+                                  Dr Blazio M Manobo is a Social Scientist, Researcher, and Development Practitioner specializing in
+                                  inclusivity research and programming. He has published several articles in theology and development
+                                  and contributes to multiple Boards of Directors, advancing mental health programs nationwide.
+                                  <br><br>
+                                  He is a senior lecturer and strategist for youth-focused programs.
+                              </p>
+                              <div class="team-social">
+                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                      <i class="bi bi-linkedin"></i>
+                                  </a>
+                                  <a href="#" class="social-link twitter" aria-label="Twitter">
+                                      <i class="bi bi-twitter"></i>
+                                  </a>
+                                  <a href="mailto:blazio@queenofpeace.org" class="social-link email" aria-label="Email">
+                                      <i class="bi bi-envelope"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Slide 2 -->
+                  <div class="team-slide">
+                      <!-- Trevor Punungwe -->
+                      <div class="team-card">
+                          <div class="team-card-header">
+                              <img src="{{ asset('images/directors/trevor-m.jpeg') }}" 
+                                   alt="Trevor M. Punungwe" 
+                                   class="team-profile-img">
+                          </div>
+                          <div class="team-card-body">
+                              <h3 class="team-name">Trevor M. Punungwe</h3>
+                              <p class="team-role">
+                                  <i class="bi bi-laptop"></i>
+                                  Director – IT & Youth Engagement
+                              </p>
+                              <p class="team-bio">
+                                  Trevor oversees digital transformation and youth-centered programming, ensuring mental health
+                                  services are accessible through technology. With a background in Data Science and Informatics, he
+                                  leads innovation, digital strategy, and youth engagement initiatives that empower young people
+                                  through modern wellness interventions.
+                              </p>
+                              <div class="team-social">
+                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                      <i class="bi bi-linkedin"></i>
+                                  </a>
+                                  <a href="#" class="social-link twitter" aria-label="Twitter">
+                                      <i class="bi bi-twitter"></i>
+                                  </a>
+                                  <a href="mailto:trevor@queenofpeace.org" class="social-link email" aria-label="Email">
+                                      <i class="bi bi-envelope"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Alington Mudzingwa -->
+                      <div class="team-card">
+                          <div class="team-card-header">
+                              <img src="{{ asset('images/directors/a-mudzingwa.jpg') }}" 
+                                   alt="Alington Mudzingwa" 
+                                   class="team-profile-img">
+                          </div>
+                          <div class="team-card-body">
+                              <h3 class="team-name">Alington Mudzingwa</h3>
+                              <p class="team-role">
+                                  <i class="bi bi-briefcase"></i>
+                                  Board Member
+                              </p>
+                              <p class="team-bio">
+                                  Alington is a development strategist and advocate for inclusive mental health integration. As a
+                                  Board Member, he supports governance, strategic planning, and evidence-based interventions.
+                                  <br><br>
+                                  He is the Founder & CEO of ALIEUM Investments and has served on the Board of Gweru Polytechnic.
+                                  Currently pursuing a Master's in Public Policy in Thailand, he brings expertise spanning mental
+                                  health, education, and economic empowerment.
+                              </p>
+                              <div class="team-social">
+                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                      <i class="bi bi-linkedin"></i>
+                                  </a>
+                                  <a href="#" class="social-link twitter" aria-label="Twitter">
+                                      <i class="bi bi-twitter"></i>
+                                  </a>
+                                  <a href="mailto:alington@queenofpeace.org" class="social-link email" aria-label="Email">
+                                      <i class="bi bi-envelope"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Carousel Controls -->
+              <div class="carousel-controls">
+                  <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">
+                      <i class="bi bi-chevron-left"></i>
+                  </button>
+                  
+                  <div class="carousel-indicators">
+                      <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                      <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                  </div>
+                  
+                  <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">
+                      <i class="bi bi-chevron-right"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- CTA Section -->
     <section class="cta-section">

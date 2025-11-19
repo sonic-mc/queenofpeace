@@ -7,15 +7,43 @@
   /* Import Inter Font */
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+  /* CSS Variables for Consistency */
+  :root {
+    --primary-blue: #0066FF;
+    --primary-blue-dark: #0052CC;
+    --primary-blue-light: #3385FF;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --white: #ffffff;
+    
+    /* Responsive spacing */
+    --spacing-xs: clamp(0.25rem, 1vw, 0.5rem);
+    --spacing-sm: clamp(0.5rem, 2vw, 1rem);
+    --spacing-md: clamp(1rem, 3vw, 1.5rem);
+    --spacing-lg: clamp(1.5rem, 4vw, 2.5rem);
+    --spacing-xl: clamp(2rem, 5vw, 4rem);
+    
+    /* Responsive font sizes */
+    --font-xs: clamp(0.75rem, 1.5vw, 0.875rem);
+    --font-sm: clamp(0.875rem, 2vw, 1rem);
+    --font-base: clamp(1rem, 2.5vw, 1.125rem);
+    --font-lg: clamp(1.125rem, 3vw, 1.5rem);
+    --font-xl: clamp(1.5rem, 4vw, 2rem);
+    --font-2xl: clamp(2rem, 5vw, 3rem);
+    --font-3xl: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
   /* Hero Section */
   .donate-hero {
     position: relative;
-    padding: 100px 20px;
+    padding: clamp(4rem, 10vw, 6.25rem) var(--spacing-md);
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
                 url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop') center/cover;
     color: white;
     text-align: center;
     overflow: hidden;
+    background-attachment: fixed;
   }
 
   .donate-hero::before {
@@ -35,7 +63,7 @@
   }
 
   .donate-hero-content {
-    max-width: 900px;
+    max-width: min(900px, 90vw);
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -55,9 +83,9 @@
 
   .donate-hero h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 3.5rem;
+    font-size: var(--font-3xl);
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.02em;
     color: white;
@@ -65,7 +93,7 @@
 
   .donate-hero p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: clamp(1.063rem, 2.5vw, 1.3rem);
     opacity: 0.95;
     line-height: 1.7;
     color: white;
@@ -74,19 +102,22 @@
 
   /* Section */
   .section {
-    padding: 80px 20px;
+    padding: clamp(3rem, 8vw, 5rem) var(--spacing-md);
+    width: 100%;
+    overflow: hidden;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
   }
 
   /* Donation Grid */
   .donation-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+    gap: clamp(2rem, 4vw, 2.5rem);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -94,8 +125,8 @@
   /* Donation Form Card */
   .donation-form-card {
     background: white;
-    border-radius: 24px;
-    padding: 45px;
+    border-radius: clamp(16px, 3vw, 24px);
+    padding: clamp(2rem, 5vw, 2.8rem);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
     animation: fadeInScale 0.8s ease-out;
   }
@@ -113,35 +144,36 @@
 
   .donation-form-card h2 {
     font-family: 'Inter', sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
     color: #1f2937;
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.5rem, 3vw, 1.875rem);
     letter-spacing: -0.02em;
   }
 
   /* Donation Type Tabs */
   .donation-type-tabs {
     display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap: clamp(0.5rem, 1.5vw, 0.625rem);
+    margin-bottom: clamp(1.5rem, 3vw, 1.875rem);
     background: #f3f4f6;
-    padding: 6px;
-    border-radius: 12px;
+    padding: clamp(0.375rem, 1vw, 0.375rem);
+    border-radius: clamp(10px, 2vw, 12px);
   }
 
   .donation-type-tab {
     flex: 1;
-    padding: 14px 20px;
+    padding: clamp(0.75rem, 2vw, 0.875rem) clamp(1rem, 2.5vw, 1.25rem);
     background: transparent;
     border: none;
-    border-radius: 8px;
+    border-radius: clamp(8px, 1.5vw, 8px);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     color: #6b7280;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
   }
 
   .donation-type-tab.active {
@@ -153,19 +185,19 @@
   /* Amount Selection */
   .amount-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
+    margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
   }
 
   .amount-btn {
-    padding: 16px;
+    padding: clamp(0.875rem, 2vw, 1rem);
     background: #f9fafb;
     border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
     color: #1f2937;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -185,16 +217,16 @@
 
   /* Custom Amount */
   .custom-amount {
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.5rem, 3vw, 1.875rem);
   }
 
   .custom-amount label {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     font-weight: 700;
     color: #1f2937;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: clamp(0.5rem, 1.5vw, 0.625rem);
   }
 
   .amount-input-wrapper {
@@ -203,22 +235,23 @@
 
   .currency-symbol {
     position: absolute;
-    left: 20px;
+    left: clamp(1rem, 2.5vw, 1.25rem);
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: clamp(1.063rem, 2.5vw, 1.2rem);
     color: #6b7280;
+    pointer-events: none;
   }
 
   .amount-input {
     width: 100%;
-    padding: 16px 20px 16px 50px;
+    padding: clamp(0.875rem, 2vw, 1rem) clamp(1rem, 2.5vw, 1.25rem) clamp(0.875rem, 2vw, 1rem) clamp(2.5rem, 5vw, 3.125rem);
     border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
     font-weight: 600;
     transition: all 0.3s ease;
   }
@@ -231,16 +264,16 @@
 
   /* Form Group */
   .form-group {
-    margin-bottom: 25px;
+    margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
   }
 
   .form-label {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     font-weight: 700;
     color: #1f2937;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: clamp(0.5rem, 1.5vw, 0.625rem);
   }
 
   .form-label .required {
@@ -250,11 +283,11 @@
 
   .form-control {
     width: 100%;
-    padding: 14px 20px;
+    padding: clamp(0.75rem, 2vw, 0.875rem) clamp(1rem, 2.5vw, 1.25rem);
     border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.938rem, 2vw, 1rem);
     transition: all 0.3s ease;
   }
 
@@ -266,31 +299,32 @@
 
   .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: clamp(1rem, 2.5vw, 1.25rem);
   }
 
   /* Payment Methods */
   .payment-methods {
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.5rem, 3vw, 1.875rem);
   }
 
   .payment-methods-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
   }
 
   .payment-method {
-    padding: 16px;
+    padding: clamp(0.875rem, 2vw, 1rem);
     background: #f9fafb;
     border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
     cursor: pointer;
     transition: all 0.3s ease;
+    min-height: clamp(60px, 12vw, 70px);
   }
 
   .payment-method:hover {
@@ -304,11 +338,13 @@
   }
 
   .payment-radio {
-    width: 20px;
-    height: 20px;
+    width: clamp(18px, 3vw, 20px);
+    height: clamp(18px, 3vw, 20px);
+    min-width: clamp(18px, 3vw, 20px);
     border: 2px solid #d1d5db;
     border-radius: 50%;
     position: relative;
+    flex-shrink: 0;
   }
 
   .payment-method.selected .payment-radio {
@@ -321,62 +357,65 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
+    width: clamp(8px, 2vw, 10px);
+    height: clamp(8px, 2vw, 10px);
     background: #0066FF;
     border-radius: 50%;
   }
 
   .payment-method-info {
     flex: 1;
+    min-width: 0;
   }
 
   .payment-method-name {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     color: #1f2937;
-    margin-bottom: 2px;
+    margin-bottom: clamp(0.125rem, 0.5vw, 0.125rem);
   }
 
   .payment-method-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
     color: #6b7280;
   }
 
   .payment-method-icon {
-    font-size: 1.8rem;
+    font-size: clamp(1.375rem, 3vw, 1.8rem);
     color: #0066FF;
+    flex-shrink: 0;
   }
 
   /* Anonymous Donation */
   .anonymous-donation {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px;
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
+    padding: clamp(0.875rem, 2vw, 1rem);
     background: #f9fafb;
-    border-radius: 12px;
-    margin-bottom: 25px;
+    border-radius: clamp(10px, 2vw, 12px);
+    margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
   }
 
   .checkbox-wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
     cursor: pointer;
   }
 
   .checkbox {
-    width: 20px;
-    height: 20px;
+    width: clamp(18px, 3vw, 20px);
+    height: clamp(18px, 3vw, 20px);
     cursor: pointer;
+    flex-shrink: 0;
   }
 
   .checkbox-label {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     font-weight: 600;
     color: #1f2937;
     cursor: pointer;
@@ -385,21 +424,21 @@
   /* Submit Button */
   .btn-donate {
     width: 100%;
-    padding: 18px;
+    padding: clamp(1rem, 2.5vw, 1.125rem);
     background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 2.2vw, 1.15rem);
     border: none;
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: clamp(0.625rem, 1.5vw, 0.75rem);
   }
 
   .btn-donate:hover {
@@ -407,11 +446,17 @@
     box-shadow: 0 12px 35px rgba(0, 102, 255, 0.5);
   }
 
+  .btn-donate:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+
   /* Donation Summary Card */
   .donation-summary-card {
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
-    border-radius: 24px;
-    padding: 35px;
+    border-radius: clamp(16px, 3vw, 24px);
+    padding: clamp(2rem, 4vw, 2.2rem);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
     height: fit-content;
     position: sticky;
@@ -420,18 +465,18 @@
 
   .donation-summary-card h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 900;
     color: #1f2937;
-    margin-bottom: 25px;
+    margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
     letter-spacing: -0.02em;
   }
 
   .impact-item {
-    padding: 20px;
+    padding: clamp(1rem, 2.5vw, 1.25rem);
     background: white;
-    border-radius: 16px;
-    margin-bottom: 16px;
+    border-radius: clamp(12px, 2vw, 16px);
+    margin-bottom: clamp(0.875rem, 2vw, 1rem);
     border: 2px solid #e5e7eb;
     transition: all 0.3s ease;
   }
@@ -442,32 +487,32 @@
   }
 
   .impact-icon {
-    width: 50px;
-    height: 50px;
+    width: clamp(45px, 8vw, 50px);
+    height: clamp(45px, 8vw, 50px);
     background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
-    border-radius: 12px;
+    border-radius: clamp(10px, 2vw, 12px);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: clamp(0.625rem, 1.5vw, 0.75rem);
   }
 
   .impact-icon i {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     color: white;
   }
 
   .impact-title {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     color: #1f2937;
-    margin-bottom: 8px;
+    margin-bottom: clamp(0.375rem, 1vw, 0.5rem);
   }
 
   .impact-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: clamp(0.875rem, 2vw, 0.9rem);
     color: #6b7280;
     line-height: 1.6;
   }
@@ -476,55 +521,57 @@
   .trust-badges {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-top: 25px;
-    padding-top: 25px;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 2vw, 0.938rem);
+    margin-top: clamp(1.25rem, 3vw, 1.5rem);
+    padding-top: clamp(1.25rem, 3vw, 1.5rem);
     border-top: 2px solid #e5e7eb;
   }
 
   .trust-badge {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: clamp(0.375rem, 1vw, 0.5rem);
     font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
     color: #6b7280;
+    white-space: nowrap;
   }
 
   .trust-badge i {
     color: #0066FF;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
 
   /* Other Ways to Give */
   .other-ways {
     background: white;
-    border-radius: 24px;
-    padding: 50px;
-    margin-top: 60px;
+    border-radius: clamp(16px, 3vw, 24px);
+    padding: clamp(2.5rem, 5vw, 3rem);
+    margin-top: clamp(2.5rem, 5vw, 3.75rem);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
   }
 
   .other-ways h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
     color: #1f2937;
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.5rem, 3vw, 1.875rem);
     text-align: center;
     letter-spacing: -0.02em;
   }
 
   .other-ways-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: clamp(1.25rem, 3vw, 1.5rem);
   }
 
   .other-way-item {
-    padding: 30px;
+    padding: clamp(1.5rem, 3vw, 1.875rem);
     background: #f9fafb;
-    border-radius: 16px;
+    border-radius: clamp(12px, 2vw, 16px);
     border: 2px solid #e5e7eb;
     transition: all 0.3s ease;
   }
@@ -536,93 +583,102 @@
   }
 
   .other-way-icon {
-    width: 60px;
-    height: 60px;
+    width: clamp(50px, 10vw, 60px);
+    height: clamp(50px, 10vw, 60px);
     background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 2.5vw, 1.25rem);
   }
 
   .other-way-icon i {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
     color: white;
   }
 
   .other-way-title {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: clamp(1.063rem, 2.2vw, 1.2rem);
     color: #1f2937;
-    margin-bottom: 12px;
+    margin-bottom: clamp(0.625rem, 1.5vw, 0.75rem);
   }
 
   .other-way-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: clamp(0.875rem, 2vw, 0.95rem);
     color: #6b7280;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: clamp(0.75rem, 2vw, 0.938rem);
   }
 
   .other-way-contact {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: clamp(0.813rem, 1.8vw, 0.9rem);
+    font-weight: 600;
     color: #0066FF;
+    line-height: 1.7;
+    word-wrap: break-word;
+  }
+
+  .other-way-contact strong {
+    display: inline-block;
+    color: #1f2937;
+    min-width: fit-content;
   }
 
   /* Testimonials */
   .testimonials-section {
-    padding: 80px 20px;
+    padding: clamp(3rem, 8vw, 5rem) var(--spacing-md);
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(51, 133, 255, 0.05) 100%);
   }
 
   .section-title {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: clamp(1.875rem, 4vw, 2.8rem);
     font-weight: 900;
     color: #1f2937;
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
     letter-spacing: -0.02em;
   }
 
   .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 1.875rem);
     max-width: 1200px;
     margin: 0 auto;
   }
 
   .testimonial-card {
     background: white;
-    padding: 35px;
-    border-radius: 20px;
+    padding: clamp(1.75rem, 4vw, 2.2rem);
+    border-radius: clamp(16px, 3vw, 20px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
 
   .testimonial-quote {
     font-family: 'Inter', sans-serif;
-    font-size: 1.05rem;
+    font-size: clamp(0.938rem, 2vw, 1.05rem);
     color: #4b5563;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 2.5vw, 1.25rem);
     font-style: italic;
   }
 
   .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: clamp(0.75rem, 2vw, 0.938rem);
   }
 
   .author-avatar {
-    width: 50px;
-    height: 50px;
+    width: clamp(45px, 8vw, 50px);
+    height: clamp(45px, 8vw, 50px);
+    min-width: clamp(45px, 8vw, 50px);
     background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     border-radius: 50%;
     display: flex;
@@ -630,26 +686,43 @@
     justify-content: center;
     color: white;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: clamp(1.063rem, 2.2vw, 1.2rem);
   }
 
   .author-info {
     font-family: 'Inter', sans-serif;
+    min-width: 0;
   }
 
   .author-name {
     font-weight: 700;
     color: #1f2937;
-    margin-bottom: 2px;
+    margin-bottom: clamp(0.125rem, 0.5vw, 0.125rem);
+    font-size: clamp(0.938rem, 2vw, 1rem);
   }
 
   .author-title {
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
     color: #6b7280;
   }
 
-  /* Responsive */
-  @media (max-width: 968px) {
+  /* Security Badge */
+  .security-badge {
+    text-align: center;
+    margin-top: clamp(1rem, 2.5vw, 1.25rem);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    color: #6b7280;
+  }
+
+  /* Responsive Breakpoints */
+  
+  /* Extra Small Mobile (320px - 479px) */
+  @media (max-width: 479px) {
+    .donate-hero {
+      background-attachment: scroll;
+    }
+
     .donation-grid {
       grid-template-columns: 1fr;
     }
@@ -659,6 +732,10 @@
       top: 0;
     }
 
+    .amount-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .form-row {
       grid-template-columns: 1fr;
     }
@@ -666,29 +743,122 @@
     .payment-methods-grid {
       grid-template-columns: 1fr;
     }
+
+    .trust-badges {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
-  @media (max-width: 768px) {
+  /* Mobile Landscape (480px - 767px) */
+  @media (min-width: 480px) and (max-width: 767px) {
     .donate-hero {
-      padding: 60px 20px;
+      background-attachment: scroll;
     }
 
-    .donate-hero h1 {
-      font-size: 2rem;
+    .donation-grid {
+      grid-template-columns: 1fr;
     }
 
-    .donate-hero p {
-      font-size: 1.1rem;
+    .donation-summary-card {
+      position: relative;
+      top: 0;
     }
 
     .amount-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    .donation-form-card,
-    .donation-summary-card,
-    .other-ways {
-      padding: 30px;
+    .payment-methods-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Tablet Portrait (768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .donation-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .donation-summary-card {
+      position: relative;
+      top: 0;
+    }
+
+    .amount-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Tablet Landscape & Desktop (992px+) */
+  @media (min-width: 992px) {
+    .donation-grid {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+
+  /* Large Desktop (1200px+) */
+  @media (min-width: 1200px) {
+    .amount-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Landscape Orientation on Mobile */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .donate-hero {
+      padding: 3rem var(--spacing-md);
+      background-attachment: scroll;
+    }
+
+    .donation-summary-card {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  /* High DPI / Retina Displays */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .donate-hero {
+      background-image: linear-gradient(135deg, rgba(0, 102, 255, 0.5) 0%, rgba(0, 82, 204, 0.4) 100%),
+                        url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop&dpr=2');
+    }
+  }
+
+  /* Reduced Motion for Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Print Styles */
+  @media print {
+    .donate-hero,
+    .testimonials-section {
+      display: none;
+    }
+
+    .donation-form-card form button {
+      display: none;
+    }
+  }
+
+  /* Touch device optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .amount-btn:hover,
+    .btn-donate:hover,
+    .other-way-item:hover {
+      transform: none;
+    }
+
+    .amount-btn:active,
+    .btn-donate:active {
+      transform: scale(0.98);
     }
   }
 </style>
@@ -830,13 +1000,11 @@
                         <!-- Submit Button -->
                         <button type="submit" class="btn-donate">
                             <i class="fas fa-heart"></i>
-                            Donate Now
+                            <span>Donate Now</span>
                         </button>
 
-                        <div style="text-align: center; margin-top: 20px;">
-                            <div style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #6b7280;">
-                                🔒 Your donation is secure and tax-deductible
-                            </div>
+                        <div class="security-badge">
+                            🔒 Your donation is secure and tax-deductible
                         </div>
                     </form>
                 </div>
@@ -900,7 +1068,7 @@
                         </div>
                         <div class="other-way-contact">
                             <strong>Bank:</strong> Banc ABC<br>
-                            <strong>Account USD:</strong> 12655006633189
+                            <strong>Account USD:</strong> 12655006633189<br>
                             <strong>Account ZIG:</strong> 510-12655005402020
                         </div>
                     </div>
@@ -914,8 +1082,7 @@
                             Send donations via EcoCash or OneMoney for quick support.
                         </div>
                         <div class="other-way-contact">
-                            <strong>EcoCash:</strong> +263 772 600 778<br>
-                            {{-- <strong>OneMoney:</strong> +263 71 993 2695 --}}
+                            <strong>EcoCash:</strong> +263 772 600 778
                         </div>
                     </div>
 
@@ -928,8 +1095,8 @@
                             Donate goods, supplies, or services to support our programs.
                         </div>
                         <div class="other-way-contact">
-                            <strong>Contact:</strong> queenofpeace.org@gmail.com | qprehab@gmail.com <br>
-                            <strong>Phone:</strong> +263 77 7 942 996 | +263 772 600 778 | +263 719 932 695
+                            <strong>Email:</strong> queenofpeace.org@gmail.com<br>
+                            <strong>Phone:</strong> +263 77 7 942 996
                         </div>
                     </div>
                 </div>
@@ -940,7 +1107,7 @@
     <!-- Testimonials -->
     <section class="testimonials-section">
         <div class="container">
-            <h2 class="section-title" style="margin-bottom: 50px;">What Donors Say</h2>
+            <h2 class="section-title" style="margin-bottom: clamp(2rem, 5vw, 3rem);">What Donors Say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-quote">
@@ -1031,15 +1198,15 @@ document.getElementById('donationForm').addEventListener('submit', function(e) {
     
     // Show loading state
     const submitBtn = this.querySelector('.btn-donate');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Processing...</span>';
     submitBtn.disabled = true;
     
     // Here you would integrate with your payment gateway
     // For demonstration, we'll simulate a delay
     setTimeout(() => {
         alert(`Thank you for your donation of $${amount}!\n\nPayment method: ${paymentMethod}\n\nYou will receive a confirmation email shortly.`);
-        submitBtn.innerHTML = originalText;
+        submitBtn.innerHTML = originalHTML;
         submitBtn.disabled = false;
         // Redirect to thank you page
         // window.location.href = '/donate/thank-you';
