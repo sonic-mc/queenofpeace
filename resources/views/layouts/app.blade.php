@@ -782,7 +782,12 @@
       <div class="top-bar-right">
         <div class="social-icons">
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/queenofpeacerehab?igsh=MTNxb2o2d2Zwb3lsdQ%3D%3D&utm_source=qr" 
+            target="_blank" 
+            aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+          </a>
+
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           <span style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 10px;"></span>
@@ -863,7 +868,11 @@
           <p>We support addiction recovery and mental health healing with compassion, dedication, and professional care. Together, we can make a difference.</p>
           <div class="social-icons" style="margin-top: 24px;">
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/queenofpeacerehab?igsh=MTNxb2o2d2Zwb3lsdQ%3D%3D&utm_source=qr" 
+            target="_blank" 
+            aria-label="Instagram">
+             <i class="fab fa-instagram"></i>
+         </a>
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
