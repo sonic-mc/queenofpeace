@@ -788,7 +788,12 @@
               <i class="fab fa-instagram"></i>
           </a>
 
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61584069418559" 
+            aria-label="Facebook" 
+            target="_blank">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           <span style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 10px;"></span>
           <a href="{{ route('admin.login') }}" aria-label="Admin Login" title="Admin Login" style="font-size: 1rem;">
