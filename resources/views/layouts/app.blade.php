@@ -13,6 +13,16 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <link rel="icon" type="image/png" href="/images/flavicon/icon.png" />
+
+  <link rel="apple-touch-icon" href="/images/flavicon/peace.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/flavicon/peace.jpg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/flavicon/peace.jpg">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/flavicon/peace.jpg">
+ 
+
+
+
   <style>
     /* Global Styles */
     * {
