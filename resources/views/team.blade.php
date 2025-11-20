@@ -439,15 +439,20 @@
                                   campaigns against substance abuse.
                               </p>
                               <div class="team-social">
-                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                      <i class="bi bi-linkedin"></i>
-                                  </a>
+                                <a href="https://www.linkedin.com/in/dr-stella-k-punungwe-906386392" 
+                                    class="social-link linkedin" 
+                                    aria-label="LinkedIn" 
+                                    target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                             
                                   <a href="#" class="social-link twitter" aria-label="Twitter">
                                       <i class="bi bi-twitter"></i>
                                   </a>
-                                  <a href="mailto:stella@queenofpeace.org" class="social-link email" aria-label="Email">
+                                  <a href="mailto:stellakpunungwe@gmail.com" class="social-link email" aria-label="Email">
                                       <i class="bi bi-envelope"></i>
                                   </a>
+                                
                               </div>
                           </div>
                       </div>
@@ -509,15 +514,20 @@
                                   through modern wellness interventions.
                               </p>
                               <div class="team-social">
-                                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                      <i class="bi bi-linkedin"></i>
-                                  </a>
+                                <a href="https://zw.linkedin.com/in/trevor-punungwe-02b082287" 
+                                    class="social-link linkedin"
+                                    aria-label="LinkedIn"
+                                    target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                             
                                   <a href="#" class="social-link twitter" aria-label="Twitter">
                                       <i class="bi bi-twitter"></i>
                                   </a>
-                                  <a href="mailto:trevor@queenofpeace.org" class="social-link email" aria-label="Email">
-                                      <i class="bi bi-envelope"></i>
+                                  <a href="mailto:trevpunungwe.work@gmail.com" class="social-link email" aria-label="Email">
+                                    <i class="bi bi-envelope"></i>
                                   </a>
+                                
                               </div>
                           </div>
                       </div>
