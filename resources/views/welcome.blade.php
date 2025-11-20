@@ -125,7 +125,7 @@
     font-family: 'Inter', sans-serif;
     font-size: var(--font-3xl);
     font-weight: 900;
-    margin-bottom: clamp(1rem, 2vw, 1.8rem);
+    margin-bottom: clamp(0.75rem, 2vw, 1.8rem);
     color: white !important;
     line-height: 1.15;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -134,10 +134,10 @@
 
   .hero-text p {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(0.938rem, 2.2vw, 1.4rem);
+    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
     color: white !important;
-    line-height: 1.7;
+    line-height: 1.6;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     font-weight: 400;
     max-width: 100%;
@@ -145,18 +145,19 @@
 
   .hero-buttons {
     display: flex;
-    gap: clamp(0.75rem, 2vw, 1.25rem);
+    gap: clamp(0.625rem, 2vw, 1.25rem);
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
   .btn-primary {
-    padding: clamp(0.875rem, 2vw, 1.125rem) clamp(1.5rem, 4vw, 2.8rem);
+    padding: clamp(0.75rem, 2vw, 1.125rem) clamp(1.25rem, 3.5vw, 2.8rem);
     background: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
     color: white;
     font-weight: 700;
     border-radius: 50px;
-    font-size: clamp(0.938rem, 2vw, 1.15rem);
+    font-size: clamp(0.875rem, 2vw, 1.15rem);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 25px rgba(0, 102, 255, 0.5);
     border: none;
@@ -174,12 +175,12 @@
   }
 
   .btn-secondary {
-    padding: clamp(0.875rem, 2vw, 1.125rem) clamp(1.5rem, 4vw, 2.8rem);
+    padding: clamp(0.75rem, 2vw, 1.125rem) clamp(1.25rem, 3.5vw, 2.8rem);
     background: rgba(255, 255, 255, 0.25);
     color: white;
     font-weight: 700;
     border-radius: 50px;
-    font-size: clamp(0.938rem, 2vw, 1.15rem);
+    font-size: clamp(0.875rem, 2vw, 1.15rem);
     border: 2px solid rgba(255, 255, 255, 0.9);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
@@ -645,6 +646,40 @@
     display: block;
   }
 
+  /* Mobile-Specific Slider Optimizations */
+  @media (max-width: 767px) {
+    .hero-text h1 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      margin-bottom: 0.625rem;
+    }
+
+    .hero-text p {
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      min-width: clamp(180px, 70vw, 240px);
+      max-width: 260px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .hero-text {
+      padding: 1.5rem 1rem;
+    }
+  }
+
   /* Responsive Breakpoints */
   
   /* Extra Small Mobile (320px - 479px) */
@@ -653,15 +688,20 @@
       height: 65vh;
     }
 
-    .hero-buttons {
-      flex-direction: column;
-      width: 100%;
+    .hero-text h1 {
+      font-size: 1.5rem;
+    }
+
+    .hero-text p {
+      font-size: 0.875rem;
     }
 
     .btn-primary,
     .btn-secondary {
       width: 100%;
-      max-width: 280px;
+      max-width: 220px;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.813rem;
     }
 
     .slider-arrow {
@@ -692,6 +732,21 @@
   @media (min-width: 480px) and (max-width: 767px) {
     .hero-slider {
       height: 70vh;
+    }
+
+    .hero-text h1 {
+      font-size: 1.75rem;
+    }
+
+    .hero-text p {
+      font-size: 0.938rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      max-width: 240px;
+      padding: 0.75rem 1.75rem;
+      font-size: 0.875rem;
     }
 
     .programs-grid {
@@ -751,12 +806,22 @@
     }
 
     .hero-text h1 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
 
     .hero-text p {
-      font-size: 0.938rem;
-      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 0.625rem 1.25rem;
+      font-size: 0.813rem;
+    }
+
+    .hero-buttons {
+      gap: 0.625rem;
     }
 
     .slider-nav {
@@ -823,6 +888,16 @@
 
     .program-card:active,
     .gallery-item:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      transform: none;
+    }
+
+    .btn-primary:active,
+    .btn-secondary:active {
       transform: scale(0.98);
     }
   }
