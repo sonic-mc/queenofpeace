@@ -730,7 +730,7 @@
                     <div class="contact-person">
                         <h5>Executive Director</h5>
                         <p>
-                            <strong>Mrs Stella Khumalo Gaihai Punungwe</strong>
+                            <strong>Mrs Stella Khumalo Punungwe</strong>
                             <a href="tel:+263772600778">+263 772 600 778</a>
                         </p>
                     </div>
