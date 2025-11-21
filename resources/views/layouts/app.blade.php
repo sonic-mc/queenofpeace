@@ -786,7 +786,7 @@
         </a>
         <a href="mailto:info@queenofpeacerehab.org">
           <i class="fas fa-envelope"></i>
-          <span>info@queenofpeacerehab.org</span>
+          <span>queenofpeacerehab.org@gmail.com</span>
         </a>
       </div>
       <div class="top-bar-right">
@@ -804,7 +804,13 @@
               <i class="fab fa-facebook-f"></i>
           </a>
 
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/queen-of-peace-rehab/" 
+            class="social-link linkedin" 
+            aria-label="LinkedIn" 
+            target="_blank">
+              <i class="fab fa-linkedin"></i>
+          </a>
+
           <span style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 10px;"></span>
           <a href="{{ route('admin.login') }}" aria-label="Admin Login" title="Admin Login" style="font-size: 1rem;">
             <i class="fas fa-user-shield"></i>
@@ -893,7 +899,13 @@
                 target="_blank">
                   <i class="fab fa-facebook-f"></i>
               </a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/company/queen-of-peace-rehab/" 
+                  class="social-link linkedin" 
+                  aria-label="LinkedIn" 
+                  target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+           
           </div>
         </div>
 
@@ -918,7 +930,7 @@
               <i class="fas fa-envelope"></i>
               <div>
                 <strong>Email:</strong><br>
-                info@queenofpeacerehab.org
+                queenofpeacerehab.org@gmail.com
               </div>
             </div>
             <div class="contact-item">
